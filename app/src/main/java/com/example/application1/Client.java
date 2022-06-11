@@ -72,7 +72,9 @@ public class Client extends AppCompatActivity {
                         longitude.setText(String.valueOf(location.getLongitude()));
                         latitude.setText(String.valueOf(location.getLatitude()));
 
-                        av_distace.setText(String.valueOf(distance(lastSavedLat, lastSavedLon, location.getLatitude(), location.getLongitude())));
+                        av_distace.setText(String.valueOf(Math.round(distance(lastSavedLat, lastSavedLon, location.getLatitude(), location.getLongitude()))));
+                        av_speed.setText(String.valueOf(Double.parseDouble(av_distace.getText().toString())/5));
+
 
                         lastSavedLat = location.getLatitude();
                         lastSavedLon = location.getLongitude();

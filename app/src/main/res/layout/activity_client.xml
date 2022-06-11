@@ -27,12 +27,12 @@
             android:text="Client Variables"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textSize="60sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="50dp" />
+            android:layout_height="20dp" />
 
         <TextView
             android:id="@+id/textView4"
@@ -40,11 +40,12 @@
             android:layout_height="wrap_content"
             android:text="Present Location"
             android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="16sp" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="50dp" />
+            android:layout_height="5dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -71,17 +72,18 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
         </LinearLayout>
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Average Speed"
             android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="50dp" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/av_speed"
@@ -93,7 +95,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="50dp" />
+            android:layout_height="20dp" />
 
         <TextView
             android:id="@+id/textView7"
@@ -101,11 +103,8 @@
             android:layout_height="wrap_content"
             android:text="Average Distance Covered"
             android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="50dp" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/dist"
@@ -114,6 +113,10 @@
             android:text="Distance Covered:___"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
 
 
     </LinearLayout>
