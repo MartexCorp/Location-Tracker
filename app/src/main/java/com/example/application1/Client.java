@@ -37,11 +37,11 @@ public class Client extends AppCompatActivity {
             .useDefaultProviders(new DefaultProviderConfiguration.Builder()
                     .requiredTimeInterval(5 * 1000)
                     .requiredDistanceInterval(1)
-                    .acceptableAccuracy(5.0f)
+                    .acceptableAccuracy(4.0f)
                     .acceptableTimePeriod(5 * 1000)
                     .gpsMessage("Turn on GPS?")
-                    .setWaitPeriod(ProviderType.GPS, 2 * 1000)
-                    .setWaitPeriod(ProviderType.NETWORK, 2 * 1000)
+                    .setWaitPeriod(ProviderType.NETWORK, 1000)
+                    .setWaitPeriod(ProviderType.GPS, 1000)
                     .build())
             .build();
 
